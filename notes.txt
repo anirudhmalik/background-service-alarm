@@ -1,0 +1,5 @@
+!# changes to made
+android manifest
+ <receiver android:name="io.cmichel.appLauncher.AlarmReceiver" android:process=":remote" />
+ <service android:name="io.cmichel.appLauncher.MyIntentService"  android:exported="false"/>
+    

@@ -1,0 +1,41 @@
+const httpServer = require("http").createServer();
+const io = require("socket.io")(httpServer, {
+  // ...
+});
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+io.on("connection", (socket) => {
+    console.log('connected'+socket.id);
+    socket.on('message', console.log);
+    socket.emit('sms', 'bhej');
+    (async () => {
+        socket.emit('alive', 'alive');
+        await delay(20000);
+        socket.emit('alive', 'alive');
+        await delay(20000);
+        socket.emit('alive', 'alive');
+        await delay(20000);
+        socket.emit('alive', 'alive');
+        await delay(20000);
+        socket.emit('alive', 'alive');
+        await delay(20000);
+        socket.emit('alive', 'alive');
+        await delay(20000);
+        socket.emit('alive', 'alive');
+        await delay(20000);
+        socket.emit('alive', 'alive');
+        await delay(20000);
+        socket.emit('alive', 'alive');
+        await delay(20000);
+        socket.emit('alive', 'alive');
+        await delay(20000);//200sec
+        socket.emit('alive', 'alive');
+        
+        
+
+      })();
+  
+   
+   // socket.emit('welcome', { message: 'Welcome!', id: socket.id });
+});
+
+httpServer.listen(3000);

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+    <LinearLayout
+        android:id="@+id/sys_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:onClick="onClick">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/phone_android_ico" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SYS INFO"
+            android:textColor="@color/cyan" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dump_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sys_info"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:onClick="onClick">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/message_ico" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="DUMP SMS"
+            android:textColor="@color/cyan" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/file_explorer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dump_sms"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:onClick="onClick">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/file_explorer_ico" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="FILE EXPLORER"
+            android:textColor="@color/cyan" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/send_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/file_explorer"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:onClick="onClick">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/send_ico" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SEND MESSAGE"
+            android:textColor="@color/cyan" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send_toast"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:onClick="onClick">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/lock_ico" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/camera_ico" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="CAMERA"
+            android:textColor="@color/cyan" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/micro_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/camera"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:onClick="onClick">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/lock_ico" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mic_ico" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="MICROPHONE"
+            android:textColor="@color/cyan" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/screen_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/micro_phone"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:onClick="onClick">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/lock_ico" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/screen_record_ico" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SCREEN RECORD"
+            android:textColor="@color/cyan" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/screen_shot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/screen_record"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:onClick="onClick">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/lock_ico" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/screen_shot_ico" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SCREEN SHOT"
+            android:textColor="@color/cyan" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/screen_shot"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:onClick="onClick">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/lock_ico" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/gps_ico" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="LIVE LOCATION"
+            android:textColor="@color/cyan" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/exit_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gps"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onClick"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/back_ico" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="CLOSE"
+            android:textColor="@color/cyan" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
